@@ -1,0 +1,31 @@
+<settings>
+<servers>
+  <server>
+    <id>devops-challenge-devops-challenge-repo</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>devops-challenge-devops-challenge-repo</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>devops-challenge-devops-challenge-repo</id>
+        <url>https://devops-challenge-178549792089.d.codeartifact.eu-central-1.amazonaws.com/maven/devops-challenge-repo/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>devops-challenge-devops-challenge-repo</id>
+    <name>devops-challenge-devops-challenge-repo</name>
+    <url>https://devops-challenge-178549792089.d.codeartifact.eu-central-1.amazonaws.com/maven/devops-challenge-repo/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
