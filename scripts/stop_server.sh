@@ -1,10 +1,9 @@
 #!/bin/bash
-isExistApp=""
-if [[ -n  ]]; then
+isExistApp="$(pgrep httpd)"
+if [[ -n $isExistApp ]]; then
 sudo systemctl stop httpd.service
 fi
-isExistApp=""
-if [[ -n  ]]; then
+isExistApp="$(pgrep tomcat)"
+if [[ -n $isExistApp ]]; then
 sudo systemctl stop tomcat.service
 fi
-
