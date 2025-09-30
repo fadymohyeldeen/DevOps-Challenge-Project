@@ -10,3 +10,4 @@ if pgrep tomcat > /dev/null; then
   echo "Stopping Tomcat..."
   systemctl stop tomcat.service
 fi
+
