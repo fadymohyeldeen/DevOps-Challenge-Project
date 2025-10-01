@@ -18,4 +18,11 @@
   <build>
     <finalName>nextwork-web-project</finalName>
   </build>
+<distributionManagement>
+  <repository>
+    <id>devops-challenge-domain-devops-challenge-repo</id>
+    <name>devops-challenge-domain-devops-challenge-repo</name>
+    <url>https://devops-challenge-domain-178549792089.d.codeartifact.eu-central-1.amazonaws.com/maven/devops-challenge-repo/</url>
+  </repository>
+</distributionManagement>
 </project>
