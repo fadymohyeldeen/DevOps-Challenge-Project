@@ -16,12 +16,9 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - echo Packaging artifacts...
-      - mvn package -s settings.xml
 artifacts:
   files:
     - target/nextwork-web-project.war
     - appspec.yml
     - scripts/**/*
   discard-paths: no
-
