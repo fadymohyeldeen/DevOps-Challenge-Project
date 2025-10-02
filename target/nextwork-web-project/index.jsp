@@ -7,6 +7,6 @@
             7-Day DevOps Challenge
         </a>
     </p>
-<p> This is a new line for the 2nd commit </p>
+<p> This is a new line for the 3rd commit </p>
 </body>
 </html>
